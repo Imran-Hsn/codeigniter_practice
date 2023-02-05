@@ -17,4 +17,9 @@ class BlogController extends BaseController
     {
         return "Today's Best book is: <b> $bb</b>";
     }
+
+    public function test()
+    {
+        return view('index');
+    }
 }
