@@ -37,6 +37,9 @@ $routes->get('/', 'BlogController::test');
 $routes->get('/blog', 'BlogController::index');
 $routes->get('/book/(:any)', 'BlogController::bestBook/$1');
 
+// User Routes
+$routes->get('/users', 'UserController::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
