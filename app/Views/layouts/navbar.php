@@ -1,7 +1,7 @@
 <?= $this->extend('layouts/main.php') ?>
 
 <?= $this->section('navbar') ?>
-<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg bg-info mb-2">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">CRUD</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

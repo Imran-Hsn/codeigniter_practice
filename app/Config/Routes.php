@@ -39,6 +39,8 @@ $routes->get('/book/(:any)', 'BlogController::bestBook/$1');
 
 // User Routes
 $routes->get('/users', 'UserController::index');
+$routes->get('/user/create', 'UserController::create');
+$routes->post('/user/store', 'UserController::store');
 
 /*
  * --------------------------------------------------------------------

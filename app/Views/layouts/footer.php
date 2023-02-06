@@ -1,9 +1,9 @@
  <?= $this->extend('layouts/main') ?>
 
  <?= $this->section('footer') ?>
- <div class="row">
-    <div class="footer col-12 text-white text-center">
-        <p class="bg-secondary h-100">This is Footer</p>
+ <div class="row mt-2">
+    <div class="footer col-12 text-white text-center" style="height: 100px;">
+        <h5 class="bg-secondary h-100">This is Footer</h5>
     </div>
  </div>
 
