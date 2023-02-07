@@ -43,7 +43,7 @@
                                 <td><?php echo $user['created_at'] ?></td>
                                 <td>
                                     <a href="<?= base_url('/user/edit/' . $user['id']) ?>" class="btn btn-warning">Edit</a>
-                                    <a href="#" class="btn btn-danger">Delete</a>
+                                    <a href="<?= base_url('/user/delete/'. $user['id']) ?>" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>
 

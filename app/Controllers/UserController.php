@@ -53,4 +53,12 @@ class UserController extends BaseController
         $user->update($id, $data);
         return redirect('users')->with('status', 'User Updated Successful.');
     }
+
+    public function delete($id)
+    {
+        $user = new User();
+        $user->delete($id);
+        
+        return redirect('users');
+    }
 }
