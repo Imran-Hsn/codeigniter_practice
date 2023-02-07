@@ -32,4 +32,25 @@ class UserController extends BaseController
         $user->save($data);
         return redirect('users')->with('status', 'User Added Successfully');
     }
+
+    public function edit($id)
+    {
+        $user = new User();
+        $data['user'] = $user->find($id);
+        return view('users/edit', $data);
+    }
+
+    public function update($id)
+    {
+        $user = new User();
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'email' => $this->request->getPost('email'),
+            'phone' => $this->request->getPost('phone'),
+            'password' => $this->request->getPost('password'),
+        ];
+        
+        $user->update($id, $data);
+        return redirect('users')->with('status', 'User Updated Successful.');
+    }
 }

@@ -41,6 +41,8 @@ $routes->get('/book/(:any)', 'BlogController::bestBook/$1');
 $routes->get('/users', 'UserController::index');
 $routes->get('/user/create', 'UserController::create');
 $routes->post('/user/store', 'UserController::store');
+$routes->get('/user/edit/(:num)', 'UserController::edit/$1');
+$routes->put('/user/update/(:num)', 'UserController::update/$1');
 
 /*
  * --------------------------------------------------------------------

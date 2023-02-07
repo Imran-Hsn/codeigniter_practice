@@ -16,7 +16,7 @@
             <div class="card mt-3">
                 <div class="card-header">
                     <h5>Users List
-                        <a href="<?php echo base_url('/user/create'); ?>" class="btn btn-info float-end">Add</a>
+                        <a href="<?php echo base_url('/user/create'); ?>" class="btn btn-primary float-end">Add</a>
                     </h5>
                 </div>
 
@@ -42,7 +42,7 @@
                                 <td><?php echo $user['phone'] ?></td>
                                 <td><?php echo $user['created_at'] ?></td>
                                 <td>
-                                    <a href="#" class="btn btn-info">Edit</a>
+                                    <a href="<?= base_url('/user/edit/' . $user['id']) ?>" class="btn btn-warning">Edit</a>
                                     <a href="#" class="btn btn-danger">Delete</a>
                                 </td>
                             </tr>
