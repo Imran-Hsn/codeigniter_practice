@@ -5,14 +5,14 @@
     <div class="row">
         <div class="bg-light col-lg-12 col-md-12 col-sm-12" style="height: auto;">
             <!-- Show submit message -->
-            <?php if(session()->getFlashdata('status')) {   ?>
+            <?php if(session()->getFlashdata('status')) {  ?>
 
             <div class="alert alert-info alert-dismissible fade show" role="alert">
                 <strong>Hey!</strong> <?= session()->getFlashdata('status'); ?>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <?php } ?>
-
+              
             <div class="card mt-3">
                 <div class="card-header">
                     <h5>Users List

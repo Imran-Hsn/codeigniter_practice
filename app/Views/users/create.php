@@ -27,7 +27,8 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="text" class="form-control" id="password" placeholder="Enter your password" name="password">
                     </div>
-                    <button type="submit" class="btn btn-primary float-end">Submit</button>
+                    <button type="submit" class="btn btn-primary float-end m-1">Submit</button>
+                    <a href="<?php echo base_url('/users') ?>" class="btn btn-info float-end m-1">Back</a>
                 </form>
             </div>
 
